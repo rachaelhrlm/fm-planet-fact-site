@@ -1,13 +1,4 @@
-enum Planet {
-    MERCURY = 'mercury',
-    VENUS = 'venus',
-    EARTH = 'earth',
-    MARS = 'mars',
-    JUPITER = 'jupiter',
-    SATURN = 'saturn',
-    URANUS = 'uranus',
-    NEPTUNE = 'neptune',
-}
+import { Planet } from '../../type';
 
 const colors: Record<Planet, Record<string, string>> = {
     mercury: { accent: 'bg-mercury-500', nav: 'bg-mercury-600' },
