@@ -625,6 +625,15 @@ Ensure the default browser behavior of the `hidden` attribute.
   .md\:justify-evenly{
     justify-content: space-evenly;
   }
+  .md\:pt-10{
+    padding-top: 2.5rem;
+  }
+  .md\:pb-0{
+    padding-bottom: 0px;
+  }
+  .md\:pt-5{
+    padding-top: 1.25rem;
+  }
   .md\:text-center{
     text-align: center;
   }
@@ -686,6 +695,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
   .xl\:p-0{
     padding: 0px;
+  }
+  .xl\:pt-10{
+    padding-top: 2.5rem;
+  }
+  .xl\:pt-5{
+    padding-top: 1.25rem;
   }
   .xl\:text-left{
     text-align: left;
