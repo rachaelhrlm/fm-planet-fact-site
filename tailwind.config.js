@@ -50,6 +50,13 @@ module.exports = {
                 title: ['Antonio', 'sans-serif'],
                 sans: ['Spartan', 'sans-serif'],
             },
+            fontSize: {
+                '2xs': '.6rem',
+            },
+            letterSpacing: {
+                wider: '.05em',
+                widest: '.25em',
+            },
         },
     },
     plugins: [],

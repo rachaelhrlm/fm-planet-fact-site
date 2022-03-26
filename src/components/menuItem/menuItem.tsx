@@ -12,7 +12,7 @@ export const MenuItem: FunctionComponent<MenuItemProps> = ({ onClick, planet }) 
     return (
         <button
             onClick={onClick}
-            className="font-sans font-bold text-white uppercase border-b border-white/10 py-5 px-0 flex justify-between place-items-center w-full">
+            className="font-sans font-bold text-white uppercase border-b border-white/10 py-5 px-0 flex justify-between place-items-center w-full tracking-wider">
             <h2 className="flex">
                 <div className={`h-5 w-5 ${PlanetUtils.colors[planet].nav} rounded-full mr-4`} /> {planet}
             </h2>

@@ -12,7 +12,7 @@ export const NavItem: FunctionComponent<NavItemProps> = ({ onClick, planet }) =>
         <button
             key={planet}
             onClick={onClick}
-            className="font-sans font-bold text-white text-xs uppercase relative flex justify-center place-items-center group pt-8 opacity-75 hover:opacity-100">
+            className="font-sans font-bold text-white text-xs uppercase relative flex justify-center place-items-center group pt-8 opacity-75 hover:opacity-100 tracking-wider">
             <span
                 className={`h-1 w-full hidden ${PlanetUtils.colors[planet].accent} absolute opacity-0 top-0 transition-all ease-in-out duration-300 xl:block xl:group-hover:opacity-100 `}
             />
