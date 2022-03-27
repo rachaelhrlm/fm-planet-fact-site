@@ -52,6 +52,10 @@ module.exports = {
             },
             fontSize: {
                 '2xs': '.6rem',
+                xs: '.7rem',
+            },
+            height: {
+                width: '100vw',
             },
             letterSpacing: {
                 wider: '.05em',
