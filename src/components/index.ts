@@ -3,6 +3,7 @@ export * from './menu';
 export * from './menuItem';
 export * from './navBar';
 export * from './navItem';
+export * from './sourceLink';
 export * from './statItem';
 export * from './statistics';
 export * from './viewButton';
