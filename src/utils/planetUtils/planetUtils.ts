@@ -1,14 +1,14 @@
-import { Planet, PlanetData, View, ViewInfo } from '../../type';
+import { Planet, PlanetData, View } from '../../type';
 
 const colors: Record<Planet, Record<string, string>> = {
-    mercury: { accent: 'bg-mercury-500', nav: 'bg-mercury-600' },
-    venus: { accent: 'bg-venus-500', nav: 'bg-venus-600' },
-    earth: { accent: 'bg-earth-500', nav: 'bg-earth-600' },
-    mars: { accent: 'bg-mars-500', nav: 'bg-mars-600' },
-    jupiter: { accent: 'bg-jupiter-500', nav: 'bg-jupiter-600' },
-    saturn: { accent: 'bg-saturn-500', nav: 'bg-saturn-600' },
-    uranus: { accent: 'bg-uranus-500', nav: 'bg-uranus-600' },
-    neptune: { accent: 'bg-neptune-500', nav: 'bg-neptune-600' },
+    mercury: { accent: 'bg-mercury-500 border-white/0', nav: 'bg-mercury-600' },
+    venus: { accent: 'bg-venus-500 border-white/0', nav: 'bg-venus-600' },
+    earth: { accent: 'bg-earth-500 border-white/0', nav: 'bg-earth-600' },
+    mars: { accent: 'bg-mars-500 border-white/0', nav: 'bg-mars-600' },
+    jupiter: { accent: 'bg-jupiter-500 border-white/0', nav: 'bg-jupiter-600' },
+    saturn: { accent: 'bg-saturn-500 border-white/0', nav: 'bg-saturn-600' },
+    uranus: { accent: 'bg-uranus-500 border-white/0', nav: 'bg-uranus-600' },
+    neptune: { accent: 'bg-neptune-500 border-white/0', nav: 'bg-neptune-600' },
 };
 
 const options = Object.values(Planet);
@@ -46,14 +46,18 @@ const getRadius = (planetData?: PlanetData) => {
     const radius = planetData?.radius.match(/\d+/g)?.[0];
 
     if (radius) {
-        const percentage = Math.round((parseInt(radius) / 70) * 100);
+        let percentage = Math.round((parseInt(radius) / 70) * 100);
         if (percentage > 90) {
-            return percentage;
+            percentage = percentage * 0.95;
+        } else if (percentage > 80) {
+            percentage = percentage * 1.3;
         } else if (percentage < 10) {
-            return percentage * 5 + 20;
+            percentage = percentage * 5 + 25;
         } else {
-            return percentage * 1.2 + 30;
+            percentage = percentage * 1.3 + 30;
         }
+
+        return percentage > 100 ? 100 : percentage;
     }
 };
 
