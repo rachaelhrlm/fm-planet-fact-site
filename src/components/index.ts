@@ -1,4 +1,5 @@
 export * from './icons';
+export * from './information';
 export * from './menu';
 export * from './menuItem';
 export * from './navBar';
