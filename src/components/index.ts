@@ -7,6 +7,7 @@ export * from './sourceLink';
 export * from './statItem';
 export * from './statistics';
 export * from './title';
+export * from './viewBarButton';
 export * from './viewButton';
 export * from './viewInfo';
 export * from './viewSelect';
