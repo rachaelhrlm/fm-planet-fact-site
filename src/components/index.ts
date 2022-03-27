@@ -1,5 +1,4 @@
 export * from './icons';
-export * from './information';
 export * from './menu';
 export * from './menuItem';
 export * from './navBar';
@@ -7,4 +6,6 @@ export * from './navItem';
 export * from './sourceLink';
 export * from './statItem';
 export * from './statistics';
+export * from './title';
 export * from './viewButton';
+export * from './viewInfo';
