@@ -11,7 +11,7 @@ export interface MenuProps {
 
 export const Menu: FunctionComponent<MenuProps> = ({ isVisible, onClick }) => {
     return (
-        <nav className={classNames('h-screen w-screen bg-black-500 justify-center pt-24 px-6 z-10 md:hidden', { hidden: !isVisible })}>
+        <nav className={classNames('h-screen w-screen absolute bg-black-500 justify-center pt-24 px-6 z-10 md:hidden', { hidden: !isVisible })}>
             {PlanetUtils.options.map((planet) => (
                 <MenuItem key={planet} onClick={() => onClick(planet)} planet={planet} />
             ))}
