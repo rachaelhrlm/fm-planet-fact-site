@@ -9,3 +9,4 @@ export * from './statistics';
 export * from './title';
 export * from './viewButton';
 export * from './viewInfo';
+export * from './viewSelect';
