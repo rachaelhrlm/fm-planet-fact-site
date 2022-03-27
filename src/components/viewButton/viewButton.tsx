@@ -16,7 +16,7 @@ export const ViewButton: FunctionComponent<ViewButtonProps> = ({ isSelected, num
         <button
             className={classNames(
                 { [PlanetUtils.colors[planet].accent]: isSelected },
-                `border border-white/20 px-5 py-3 h-10 flex place-items-center gap-4 font-sans font-bold text-2xs uppercase hover:bg-grey-700/20 hover:border-white/0 transition ease-in-out duration-300`,
+                `border border-white/20 px-5 py-3 h-10 flex place-items-center gap-4 font-sans font-bold text-2xs uppercase hover:bg-grey-700/20 hover:border-white/0 transition ease-in-out duration-300 xl:text-xs`,
             )}
             onClick={onClick}>
             <span className="text-white/50">{number}</span>
