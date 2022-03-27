@@ -13,6 +13,8 @@ const colors: Record<Planet, Record<string, string>> = {
 
 const options = Object.values(Planet);
 
+const viewOptions = Object.values(View);
+
 const getData = async (planet: string) => {
     return fetch('/json/data.json', {
         headers: {
@@ -76,4 +78,5 @@ export const PlanetUtils = {
     getSurfaceImage,
     getViewInfo,
     options,
+    viewOptions,
 };
