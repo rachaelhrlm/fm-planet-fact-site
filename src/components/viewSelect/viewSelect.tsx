@@ -11,7 +11,7 @@ export interface ViewSelectProps {
 
 export const ViewSelect: FunctionComponent<ViewSelectProps> = ({ onClick, planet, view: selectedView }) => {
     return (
-        <section className="grid-cols-1 gap-3 p-5 w-1/2 hidden md:grid md:text-left xl:gap-3 xl:w-full">
+        <div className="grid-cols-1 gap-3 p-5 w-1/2 hidden md:grid md:text-left xl:gap-3 xl:w-full">
             {PlanetUtils.viewOptions.map((view, index) => (
                 <ViewButton
                     key={view}
@@ -22,6 +22,6 @@ export const ViewSelect: FunctionComponent<ViewSelectProps> = ({ onClick, planet
                     view={view}
                 />
             ))}
-        </section>
+        </div>
     );
 };
