@@ -13,7 +13,7 @@ export interface ViewBarButtonProps {
 export const ViewBarButton: FunctionComponent<ViewBarButtonProps> = ({ isSelected, onClick, planet, view }) => {
     return (
         <button className="font-sans font-bold text-2xs uppercase tracking-widest text-white/75 hover:text-white group flex" onClick={onClick}>
-            <h1 className="relative group flex">
+            <p className="relative group flex">
                 {view}
                 <span
                     className={classNames(
@@ -21,7 +21,7 @@ export const ViewBarButton: FunctionComponent<ViewBarButtonProps> = ({ isSelecte
                         { 'opacity-100': isSelected },
                     )}
                 />
-            </h1>
+            </p>
         </button>
     );
 };

@@ -20,7 +20,7 @@ export const ViewButton: FunctionComponent<ViewButtonProps> = ({ isSelected, num
             )}
             onClick={onClick}>
             <span className="text-white/50">{number}</span>
-            <h1 className="text-white">{view}</h1>
+            <p className="text-white">{view}</p>
         </button>
     );
 };
