@@ -355,29 +355,68 @@ Ensure the default browser behavior of the `hidden` attribute.
 .relative{
   position: relative;
 }
+.top-\[60\%\]{
+  top: 60%;
+}
 .top-0{
   top: 0px;
+}
+.-bottom-5{
+  bottom: -1.25rem;
+}
+.z-20{
+  z-index: 20;
 }
 .z-10{
   z-index: 10;
 }
+.z-30{
+  z-index: 30;
+}
 .mr-4{
   margin-right: 1rem;
+}
+.inline{
+  display: inline;
 }
 .flex{
   display: flex;
 }
+.grid{
+  display: grid;
+}
 .hidden{
   display: none;
 }
-.h-screen{
-  height: 100vh;
+.h-\[25\%\]{
+  height: 25%;
+}
+.h-full{
+  height: 100%;
 }
 .h-5{
   height: 1.25rem;
 }
 .h-1{
   height: 0.25rem;
+}
+.h-4{
+  height: 1rem;
+}
+.h-10{
+  height: 2.5rem;
+}
+.h-width{
+  height: 100vw;
+}
+.h-\[19rem\]{
+  height: 19rem;
+}
+.min-h-screen{
+  min-height: 100vh;
+}
+.w-auto{
+  width: auto;
 }
 .w-screen{
   width: 100vw;
@@ -388,6 +427,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 .w-5{
   width: 1.25rem;
 }
+.w-4{
+  width: 1rem;
+}
+.w-1\/2{
+  width: 50%;
+}
+.grid-cols-1{
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+.place-content-between{
+  place-content: space-between;
+}
 .place-items-center{
   place-items: center;
 }
@@ -397,11 +448,41 @@ Ensure the default browser behavior of the `hidden` attribute.
 .justify-between{
   justify-content: space-between;
 }
+.gap-2{
+  gap: 0.5rem;
+}
+.gap-4{
+  gap: 1rem;
+}
+.gap-3{
+  gap: 0.75rem;
+}
+.gap-5{
+  gap: 1.25rem;
+}
+.gap-\[4vh\]{
+  gap: 4vh;
+}
+.gap-\[5rem\]{
+  gap: 5rem;
+}
+.gap-\[2rem\]{
+  gap: 2rem;
+}
+.gap-\[3rem\]{
+  gap: 3rem;
+}
+.gap-\[1rem\]{
+  gap: 1rem;
+}
 .justify-self-end{
   justify-self: end;
 }
 .rounded-full{
   border-radius: 9999px;
+}
+.border{
+  border-width: 1px;
 }
 .border-b{
   border-bottom-width: 1px;
@@ -411,6 +492,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .border-white\/10{
   border-color: rgb(255 255 255 / 0.1);
+}
+.border-white\/20{
+  border-color: rgb(255 255 255 / 0.2);
+}
+.border-white\/0{
+  border-color: rgb(255 255 255 / 0);
 }
 .bg-black-500{
   --tw-bg-opacity: 1;
@@ -486,6 +573,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 .p-5{
   padding: 1.25rem;
 }
+.p-3{
+  padding: 0.75rem;
+}
+.p-6{
+  padding: 1.5rem;
+}
 .px-6{
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -498,6 +591,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-left: 0px;
   padding-right: 0px;
 }
+.px-5{
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+.py-3{
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
 .pt-24{
   padding-top: 6rem;
 }
@@ -507,8 +608,17 @@ Ensure the default browser behavior of the `hidden` attribute.
 .pt-8{
   padding-top: 2rem;
 }
-.pt-20{
-  padding-top: 5rem;
+.pt-3{
+  padding-top: 0.75rem;
+}
+.pb-5{
+  padding-bottom: 1.25rem;
+}
+.pt-36{
+  padding-top: 9rem;
+}
+.text-center{
+  text-align: center;
 }
 .font-sans{
   font-family: Spartan, sans-serif;
@@ -517,21 +627,31 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-family: Antonio, sans-serif;
 }
 .text-xs{
-  font-size: 0.75rem;
-  line-height: 1rem;
+  font-size: .7rem;
+}
+.text-2xs{
+  font-size: .6rem;
+}
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+.text-4xl{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 .text-3xl{
   font-size: 1.875rem;
   line-height: 2.25rem;
-}
-.text-2xs{
-  font-size: .6rem;
 }
 .font-bold{
   font-weight: 700;
 }
 .uppercase{
   text-transform: uppercase;
+}
+.leading-loose{
+  line-height: 2;
 }
 .tracking-wider{
   letter-spacing: .05em;
@@ -543,8 +663,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+.text-white\/50{
+  color: rgb(255 255 255 / 0.5);
+}
 .text-white\/75{
   color: rgb(255 255 255 / 0.75);
+}
+.underline{
+  text-decoration-line: underline;
 }
 .opacity-75{
   opacity: 0.75;
@@ -552,8 +678,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 .opacity-0{
   opacity: 0;
 }
+.opacity-100{
+  opacity: 1;
+}
 .transition-all{
   transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.transition{
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -563,6 +699,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .ease-in-out{
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.hover\:border-white\/0:hover{
+  border-color: rgb(255 255 255 / 0);
+}
 .hover\:text-white:hover{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -570,27 +709,83 @@ Ensure the default browser behavior of the `hidden` attribute.
 .hover\:opacity-100:hover{
   opacity: 1;
 }
+.group:hover .group-hover\:opacity-100{
+  opacity: 1;
+}
+@media (min-width: 640px){
+  .sm\:h-\[20rem\]{
+    height: 20rem;
+  }
+  .sm\:p-5{
+    padding: 1.25rem;
+  }
+}
 @media (min-width: 768px){
+  .md\:static{
+    position: static;
+  }
   .md\:block{
     display: block;
   }
   .md\:flex{
     display: flex;
   }
+  .md\:grid{
+    display: grid;
+  }
   .md\:hidden{
     display: none;
+  }
+  .md\:h-\[30rem\]{
+    height: 30rem;
+  }
+  .md\:h-\[16rem\]{
+    height: 16rem;
+  }
+  .md\:w-1\/2{
+    width: 50%;
+  }
+  .md\:grid-cols-1{
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .md\:grid-cols-4{
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
   .md\:justify-evenly{
     justify-content: space-evenly;
   }
-  .md\:pt-5{
-    padding-top: 1.25rem;
+  .md\:justify-items-start{
+    justify-items: start;
+  }
+  .md\:gap-2{
+    gap: 0.5rem;
+  }
+  .md\:p-4{
+    padding: 1rem;
+  }
+  .md\:px-0{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .md\:py-1{
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
   }
   .md\:pt-10{
     padding-top: 2.5rem;
   }
+  .md\:pt-0{
+    padding-top: 0px;
+  }
+  .md\:text-left{
+    text-align: left;
+  }
   .md\:text-center{
     text-align: center;
+  }
+  .md\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 @media (min-width: 1280px){
@@ -612,14 +807,54 @@ Ensure the default browser behavior of the `hidden` attribute.
   .xl\:flex{
     display: flex;
   }
+  .xl\:h-\[35rem\]{
+    height: 35rem;
+  }
+  .xl\:h-\[18rem\]{
+    height: 18rem;
+  }
   .xl\:w-1\/2{
+    width: 50%;
+  }
+  .xl\:w-full{
+    width: 100%;
+  }
+  .xl\:w-\[1240px\]{
+    width: 1240px;
+  }
+  .xl\:w-\[50\%\]{
     width: 50%;
   }
   .xl\:flex-1{
     flex: 1 1 0%;
   }
+  .xl\:place-items-center{
+    place-items: center;
+  }
+  .xl\:justify-items-center{
+    justify-items: center;
+  }
+  .xl\:gap-3{
+    gap: 0.75rem;
+  }
+  .xl\:gap-6{
+    gap: 1.5rem;
+  }
+  .xl\:gap-\[3rem\]{
+    gap: 3rem;
+  }
+  .xl\:gap-\[2rem\]{
+    gap: 2rem;
+  }
+  .xl\:gap-\[2\.5rem\]{
+    gap: 2.5rem;
+  }
   .xl\:p-0{
     padding: 0px;
+  }
+  .xl\:px-10{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
   .xl\:pt-5{
     padding-top: 1.25rem;
@@ -627,7 +862,35 @@ Ensure the default browser behavior of the `hidden` attribute.
   .xl\:text-left{
     text-align: left;
   }
+  .xl\:text-xs{
+    font-size: .7rem;
+  }
+  .xl\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+  .xl\:text-7xl{
+    font-size: 5rem;
+  }
+  .xl\:text-sm{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
   .group:hover .xl\:group-hover\:opacity-100{
     opacity: 1;
+  }
+}
+@media (min-width: 1536px){
+  .\32xl\:h-\[40rem\]{
+    height: 40rem;
+  }
+  .\32xl\:h-\[30rem\]{
+    height: 30rem;
+  }
+  .\32xl\:h-\[24rem\]{
+    height: 24rem;
+  }
+  .\32xl\:w-\[1300px\]{
+    width: 1300px;
   }
 }
