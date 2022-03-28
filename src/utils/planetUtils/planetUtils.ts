@@ -16,7 +16,7 @@ const options = Object.values(Planet);
 const viewOptions = Object.values(View);
 
 const getData = async (planet: string) => {
-    return fetch('/json/data.json', {
+    return fetch(`${window.location.host.includes('localhost') ? '' : '/fm-planet-fact-site'}/json/data.json`, {
         headers: {
             'Content-Type': 'application/json',
             Accept: 'application/json',
@@ -54,7 +54,7 @@ const getRadius = (planetData?: PlanetData) => {
         } else if (percentage > 80) {
             percentage = percentage * 1.3;
         } else if (percentage < 10) {
-            percentage = percentage * 5 + 25;
+            percentage = percentage * 4 + 25;
         } else {
             percentage = percentage * 1.3 + 30;
         }
