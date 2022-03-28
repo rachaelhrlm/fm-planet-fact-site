@@ -355,27 +355,23 @@ Ensure the default browser behavior of the `hidden` attribute.
 .relative{
   position: relative;
 }
+.top-\[60\%\]{
+  top: 60%;
+}
 .top-0{
   top: 0px;
 }
 .-bottom-5{
   bottom: -1.25rem;
 }
-.top-\[60\%\]{
-  top: 60%;
-}
 .z-20{
   z-index: 20;
-}
-.z-30{
-  z-index: 30;
 }
 .z-10{
   z-index: 10;
 }
-.mx-auto{
-  margin-left: auto;
-  margin-right: auto;
+.z-30{
+  z-index: 30;
 }
 .mr-4{
   margin-right: 1rem;
@@ -391,6 +387,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .hidden{
   display: none;
+}
+.h-\[25\%\]{
+  height: 25%;
 }
 .h-full{
   height: 100%;
@@ -410,47 +409,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .h-width{
   height: 100vw;
 }
-.h-\[60vw\]{
-  height: 60vw;
-}
 .h-\[19rem\]{
   height: 19rem;
 }
-.h-\[30rem\]{
-  height: 30rem;
-}
-.h-\[35rem\]{
-  height: 35rem;
-}
-.h-\[25rem\]{
-  height: 25rem;
-}
-.h-\[20rem\]{
-  height: 20rem;
-}
-.h-\[20\%\]{
-  height: 20%;
-}
-.h-\[30\%\]{
-  height: 30%;
-}
-.h-\[35\%\]{
-  height: 35%;
-}
-.h-\[25\%\]{
-  height: 25%;
-}
-.h-auto{
-  height: auto;
-}
-.max-h-\[35rem\]{
-  max-height: 35rem;
-}
-.max-h-full{
-  max-height: 100%;
-}
 .min-h-screen{
   min-height: 100vh;
+}
+.w-auto{
+  width: auto;
 }
 .w-screen{
   width: 100vw;
@@ -466,12 +432,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .w-1\/2{
   width: 50%;
-}
-.w-auto{
-  width: auto;
-}
-.w-\[20rem\]{
-  width: 20rem;
 }
 .grid-cols-1{
   grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -500,20 +460,23 @@ Ensure the default browser behavior of the `hidden` attribute.
 .gap-5{
   gap: 1.25rem;
 }
-.gap-\[5vh\]{
-  gap: 5vh;
-}
-.gap-\[3vh\]{
-  gap: 3vh;
-}
 .gap-\[4vh\]{
   gap: 4vh;
 }
+.gap-\[5rem\]{
+  gap: 5rem;
+}
+.gap-\[2rem\]{
+  gap: 2rem;
+}
+.gap-\[3rem\]{
+  gap: 3rem;
+}
+.gap-\[1rem\]{
+  gap: 1rem;
+}
 .justify-self-end{
   justify-self: end;
-}
-.justify-self-center{
-  justify-self: center;
 }
 .rounded-full{
   border-radius: 9999px;
@@ -607,23 +570,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-starry-pattern{
   background-image: url('../assets/background-stars.svg');
 }
-.object-contain{
-  object-fit: contain;
-}
 .p-5{
   padding: 1.25rem;
 }
 .p-3{
   padding: 0.75rem;
-}
-.p-10{
-  padding: 2.5rem;
-}
-.p-20{
-  padding: 5rem;
-}
-.p-16{
-  padding: 4rem;
 }
 .p-6{
   padding: 1.5rem;
@@ -647,10 +598,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .py-3{
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-}
-.px-10{
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
 }
 .pt-24{
   padding-top: 6rem;
@@ -772,16 +719,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   .sm\:p-5{
     padding: 1.25rem;
   }
-  .sm\:p-2{
-    padding: 0.5rem;
-  }
-  .sm\:p-10{
-    padding: 2.5rem;
-  }
-  .sm\:px-10{
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-  }
 }
 @media (min-width: 768px){
   .md\:static{
@@ -799,14 +736,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   .md\:hidden{
     display: none;
   }
-  .md\:h-\[16rem\]{
-    height: 16rem;
-  }
   .md\:h-\[30rem\]{
     height: 30rem;
   }
-  .md\:h-\[20rem\]{
-    height: 20rem;
+  .md\:h-\[16rem\]{
+    height: 16rem;
   }
   .md\:w-1\/2{
     width: 50%;
@@ -828,15 +762,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
   .md\:p-4{
     padding: 1rem;
-  }
-  .md\:p-10{
-    padding: 2.5rem;
-  }
-  .md\:p-5{
-    padding: 1.25rem;
-  }
-  .md\:p-2{
-    padding: 0.5rem;
   }
   .md\:px-0{
     padding-left: 0px;
@@ -863,29 +788,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     line-height: 2rem;
   }
 }
-@media (min-width: 1024px){
-  .lg\:h-\[20rem\]{
-    height: 20rem;
-  }
-  .lg\:p-10{
-    padding: 2.5rem;
-  }
-  .lg\:p-5{
-    padding: 1.25rem;
-  }
-  .lg\:p-6{
-    padding: 1.5rem;
-  }
-  .lg\:p-7{
-    padding: 1.75rem;
-  }
-  .lg\:p-8{
-    padding: 2rem;
-  }
-  .lg\:p-16{
-    padding: 4rem;
-  }
-}
 @media (min-width: 1280px){
   .xl\:absolute{
     position: absolute;
@@ -905,50 +807,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   .xl\:flex{
     display: flex;
   }
-  .xl\:h-\[80vh\]{
-    height: 80vh;
-  }
-  .xl\:h-\[10vw\]{
-    height: 10vw;
-  }
-  .xl\:h-\[20vw\]{
-    height: 20vw;
-  }
-  .xl\:h-\[20vh\]{
-    height: 20vh;
-  }
-  .xl\:h-\[30vh\]{
-    height: 30vh;
-  }
-  .xl\:h-\[25vh\]{
-    height: 25vh;
-  }
-  .xl\:h-\[2vh\]{
-    height: 2vh;
-  }
-  .xl\:h-\[70vh\]{
-    height: 70vh;
-  }
-  .xl\:h-\[24rem\]{
-    height: 24rem;
-  }
-  .xl\:h-\[20rem\]{
-    height: 20rem;
+  .xl\:h-\[35rem\]{
+    height: 35rem;
   }
   .xl\:h-\[18rem\]{
     height: 18rem;
-  }
-  .xl\:h-\[50rem\]{
-    height: 50rem;
-  }
-  .xl\:h-\[40rem\]{
-    height: 40rem;
-  }
-  .xl\:h-\[45rem\]{
-    height: 45rem;
-  }
-  .xl\:h-\[35rem\]{
-    height: 35rem;
   }
   .xl\:w-1\/2{
     width: 50%;
@@ -956,23 +819,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   .xl\:w-full{
     width: 100%;
   }
-  .xl\:w-\[50\%\]{
-    width: 50%;
-  }
-  .xl\:w-\[1080px\]{
-    width: 1080px;
-  }
-  .xl\:w-\[1200px\]{
-    width: 1200px;
-  }
   .xl\:w-\[1240px\]{
     width: 1240px;
   }
+  .xl\:w-\[50\%\]{
+    width: 50%;
+  }
   .xl\:flex-1{
     flex: 1 1 0%;
-  }
-  .xl\:flex-grow{
-    flex-grow: 1;
   }
   .xl\:place-items-center{
     place-items: center;
@@ -983,27 +837,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   .xl\:gap-3{
     gap: 0.75rem;
   }
-  .xl\:gap-4{
-    gap: 1rem;
-  }
-  .xl\:gap-5{
-    gap: 1.25rem;
-  }
   .xl\:gap-6{
     gap: 1.5rem;
   }
+  .xl\:gap-\[3rem\]{
+    gap: 3rem;
+  }
+  .xl\:gap-\[2rem\]{
+    gap: 2rem;
+  }
+  .xl\:gap-\[2\.5rem\]{
+    gap: 2.5rem;
+  }
   .xl\:p-0{
     padding: 0px;
-  }
-  .xl\:p-3{
-    padding: 0.75rem;
-  }
-  .xl\:p-2{
-    padding: 0.5rem;
-  }
-  .xl\:px-\[10\%\]{
-    padding-left: 10%;
-    padding-right: 10%;
   }
   .xl\:px-10{
     padding-left: 2.5rem;
@@ -1015,13 +862,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   .xl\:text-left{
     text-align: left;
   }
-  .xl\:text-7xl{
-    font-size: 5rem;
-  }
-  .xl\:text-sm{
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-  }
   .xl\:text-xs{
     font-size: .7rem;
   }
@@ -1029,22 +869,26 @@ Ensure the default browser behavior of the `hidden` attribute.
     font-size: 2.25rem;
     line-height: 2.5rem;
   }
+  .xl\:text-7xl{
+    font-size: 5rem;
+  }
+  .xl\:text-sm{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
   .group:hover .xl\:group-hover\:opacity-100{
     opacity: 1;
   }
 }
 @media (min-width: 1536px){
-  .\32xl\:h-\[60rem\]{
-    height: 60rem;
-  }
-  .\32xl\:h-\[50rem\]{
-    height: 50rem;
-  }
   .\32xl\:h-\[40rem\]{
     height: 40rem;
   }
-  .\32xl\:w-\[60rem\]{
-    width: 60rem;
+  .\32xl\:h-\[30rem\]{
+    height: 30rem;
+  }
+  .\32xl\:h-\[24rem\]{
+    height: 24rem;
   }
   .\32xl\:w-\[1300px\]{
     width: 1300px;
