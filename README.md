@@ -25,6 +25,7 @@ Users should be able to:
 ### Links
 
 -   [Live Site URL](https://rachaelhrlm.github.io/fm-planet-fact-site/#/mars)
+-   [Frontend Mentor Solution URL](https://www.frontendmentor.io/solutions/planets-fact-site-solution-reacttypescripttailwind-S1ifd91X9)
 
 ## My process
 
